@@ -36,7 +36,7 @@ h4 {
   font-size: 2.4rem;
   letter-spacing: 2px;
   font-weight: 300;
-  line-height: 0.6;
+  line-height: 18px;
   padding-top: 50px;
 }
 
@@ -236,7 +236,6 @@ header nav .nav-social {
 }
 header h4 {
   font-size: 3.5rem;
-  line-height: 0;
   margin-top: -100px;
 }
 @media screen and (max-width: 600px) {
@@ -330,18 +329,16 @@ header p {
   letter-spacing: 2px;
   color: black;
   font-size: 1.4rem;
-  line-height: 1.1;
 }
 .section-store .left-part .border-store h5 {
   font-size: 1.2rem;
   font-weight: 500;
   font-family: poppins, sans-serif;
-  line-height: 1.1;
 }
 .section-store .left-part .border-store span {
   color: rgb(182, 182, 182);
   text-transform: uppercase;
-  line-height: 1.8;
+  line-height: 20px;
   font-weight: 800;
 }
 .section-store .right-part {
@@ -536,7 +533,6 @@ header p {
   color: black;
   font-size: 1.5rem;
   color: rgb(238, 238, 238);
-  line-height: 1;
 }
 .section-reserving .reserving .reserv-content .border-reserv h6 {
   text-transform: uppercase;
@@ -724,7 +720,7 @@ header p {
 .section-events .event-content .event2 .event-02 h6 time {
   font-size: 1.6rem;
   font-family: poppins, sans-serif;
-  line-height: 0.5;
+  line-height: 7px;
   color: rgb(238, 238, 238);
 }
 .section-events .event-content .event-text {
@@ -791,7 +787,7 @@ header p {
 .section-events .event-content .event-03 .center .dating h6 time {
   font-size: 2rem;
   font-family: poppins, sans-serif;
-  line-height: 0.5;
+  line-height: 7px;
   color: rgb(238, 238, 238);
 }
 .section-events .event-content .event-03 .center .dating h6 p {
@@ -838,7 +834,7 @@ header p {
 }
 .bottom-text p {
   font-size: 1.3rem;
-  line-height: 1.8;
+  line-height: 35px;
 }
 .bottom-text p span {
   color: black;
