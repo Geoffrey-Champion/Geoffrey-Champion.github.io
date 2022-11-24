@@ -59,7 +59,7 @@
     }
 
     .right-part {
-        background: url(../../../assets/img/store-01.jpg) no-repeat center/cover;
+        background: url(../../assets/img/store-01.jpg) no-repeat center/cover;
 
         @media screen and (max-width:600px) {
             display: none;
@@ -80,7 +80,7 @@
 
     &::after {
         content: "";
-        background: url(../../../assets/img/bg-menu-01.jpg) center/cover;
+        background: url(../../assets/img/bg-menu-01.jpg) center/cover;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -163,7 +163,7 @@
             background: $orang;
         }
 
-        .container-plat {
+        .container-dish {
             display: grid;
             grid-template-columns: 30% 60% 10%;
             align-items: center;
@@ -176,7 +176,7 @@
                 width: 95%;
             }
 
-            .plat {
+            .dish {
                 text-align: left;
                 padding-left: 15px;
 
@@ -407,11 +407,11 @@
             margin-right: 20px;
 
             .event-01 {
-                background: url(../../../assets/img/event-01.jpg) center/cover;
+                background: url(../../assets/img/event-01.jpg) center/cover;
             }
 
             .event-02 {
-                background: url(../../../assets/img/event-02.jpg) center/cover;
+                background: url(../../assets/img/event-02.jpg) center/cover;
             }
 
             .event-01,
@@ -458,7 +458,7 @@
         }
 
         .event-03 {
-            background: url(../../../assets/img/event-03.jpg) center/cover;
+            background: url(../../assets/img/event-03.jpg) center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -517,7 +517,7 @@
 
     &::after {
         content: "";
-        background: url(../../../assets/img/gmap.jpg) center/cover;
+        background: url(../../assets/img/gmap.jpg) center/cover;
         height: 400px;
         width: 100%;
         margin: auto;

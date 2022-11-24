@@ -1,20 +1,20 @@
 @font-face {
   font-family: "allura";
-  src: url(./assets/fonts/Allura/Allura-Regular.ttf);
+  src: url(../assets/fonts/Allura/Allura-Regular.ttf);
 }
 @font-face {
   font-family: "poppins";
-  src: url(./assets/Poppins/Poppins-Medium.ttf);
+  src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(./assets/Roboto/Roboto-Light.ttf);
+  src: url(../assets/fonts/Roboto/Roboto-Light.ttf);
 }
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #logo-cutlery {
@@ -67,8 +67,8 @@ footer .footer-content {
   width: 95%;
   margin: 0 auto;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 300px;
 }
 @media screen and (max-width: 750px) {
@@ -129,16 +129,16 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
-  background: url(../../../assets/img/bg-slider-06.jpg) center/cover;
+  background: url(../../assets/img/bg-slider-06.jpg) center/cover;
   height: 100vh;
   position: relative;
 }
@@ -153,11 +153,11 @@ header nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header nav .nav-resto {
   color: rgb(238, 238, 238);
@@ -170,11 +170,11 @@ header nav .navbar {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 70%;
   color: rgb(238, 238, 238);
   text-transform: uppercase;
@@ -190,16 +190,16 @@ header nav .navbar li {
 header nav .navbar li:hover {
   color: rgb(166, 114, 69);
   -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 header nav .nav-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 13%;
   color: white;
 }
@@ -217,7 +217,7 @@ header nav .nav-social i:hover {
     font-size: 2rem;
   }
   header nav .navbar,
-  header nav .nav-social {
+header nav .nav-social {
     font-size: 0.7rem;
   }
 }
@@ -304,14 +304,14 @@ header p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .section-store .left-part .border-store p {
   font-size: 1.1rem;
@@ -345,7 +345,7 @@ header p {
   font-weight: 800;
 }
 .section-store .right-part {
-  background: url(../../../assets/img/store-01.jpg) no-repeat center/cover;
+  background: url(../../assets/img/store-01.jpg) no-repeat center/cover;
 }
 @media screen and (max-width: 600px) {
   .section-store .right-part {
@@ -365,7 +365,7 @@ header p {
 }
 .section-menu::after {
   content: "";
-  background: url(../../../assets/img/bg-menu-01.jpg) center/cover;
+  background: url(../../assets/img/bg-menu-01.jpg) center/cover;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -380,13 +380,13 @@ header p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1000px;
   width: 92%;
   height: 30vh;
@@ -405,7 +405,7 @@ header p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   color: rgb(238, 238, 238);
   width: 100%;
 }
@@ -440,8 +440,8 @@ header p {
   grid-template-rows: repeat(4, 25%);
   position: relative;
   -webkit-column-gap: 35px;
-  -moz-column-gap: 35px;
-  column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
 }
 @media screen and (max-width: 750px) {
   .section-menu .container-menu {
@@ -458,32 +458,32 @@ header p {
   width: 100%;
   background: rgb(166, 114, 69);
 }
-.section-menu .container-menu .container-plat {
+.section-menu .container-menu .container-dish {
   display: grid;
   grid-template-columns: 30% 60% 10%;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 8px 8px;
   border-bottom: 1px dashed rgb(182, 182, 182);
 }
-.section-menu .container-menu .container-plat img {
+.section-menu .container-menu .container-dish img {
   border-radius: 100%;
   width: 95%;
 }
-.section-menu .container-menu .container-plat .plat {
+.section-menu .container-menu .container-dish .dish {
   text-align: left;
   padding-left: 15px;
 }
-.section-menu .container-menu .container-plat .plat h6 {
+.section-menu .container-menu .container-dish .dish h6 {
   text-transform: uppercase;
   font-size: 1rem;
 }
-.section-menu .container-menu .container-plat .plat span {
+.section-menu .container-menu .container-dish .dish span {
   font-size: 1.4rem;
   color: rgb(65, 65, 65);
 }
-.section-menu .container-menu .container-plat #price {
+.section-menu .container-menu .container-dish #price {
   font-size: 1.3rem;
   color: rgb(166, 114, 69);
   font-weight: 600;
@@ -519,14 +519,14 @@ header p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: rgb(238, 238, 238);
 }
 .section-reserving .reserving .reserv-content .border-reserv h3 {
@@ -554,11 +554,11 @@ header p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .section-reserving .reserving .online-booking .online-booking-content {
   width: 75%;
@@ -575,42 +575,22 @@ header p {
   letter-spacing: 2px;
   color: black;
 }
-.section-reserving
-  .reserving
-  .online-booking
-  .online-booking-content
-  form
-  .container-form {
+.section-reserving .reserving .online-booking .online-booking-content form .container-form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 40px 40px;
   gap: 30px;
 }
 @media screen and (max-width: 750px) {
-  .section-reserving
-    .reserving
-    .online-booking
-    .online-booking-content
-    form
-    .container-form {
+  .section-reserving .reserving .online-booking .online-booking-content form .container-form {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 40px);
     width: 80%;
     margin: 0 auto;
   }
 }
-.section-reserving
-  .reserving
-  .online-booking
-  .online-booking-content
-  form
-  input,
-.section-reserving
-  .reserving
-  .online-booking
-  .online-booking-content
-  form
-  #people {
+.section-reserving .reserving .online-booking .online-booking-content form input,
+.section-reserving .reserving .online-booking .online-booking-content form #people {
   border: none;
   border-bottom: 1px solid rgb(182, 182, 182);
   background: none;
@@ -619,13 +599,7 @@ header p {
   outline: none;
   padding: 0 5px;
 }
-.section-reserving
-  .reserving
-  .online-booking
-  .online-booking-content
-  form
-  .btn
-  button {
+.section-reserving .reserving .online-booking .online-booking-content form .btn button {
   margin-top: 60px;
   height: 60px;
   width: 200px;
@@ -639,13 +613,7 @@ header p {
   font-weight: 600;
 }
 @media screen and (max-width: 750px) {
-  .section-reserving
-    .reserving
-    .online-booking
-    .online-booking-content
-    form
-    .btn
-    button {
+  .section-reserving .reserving .online-booking .online-booking-content form .btn button {
     margin-bottom: 35px;
   }
 }
@@ -714,18 +682,18 @@ header p {
 }
 .section-events .event-content .event1 .event-01,
 .section-events .event-content .event2 .event-01 {
-  background: url(../../../assets/img/event-01.jpg) center/cover;
+  background: url(../../assets/img/event-01.jpg) center/cover;
 }
 .section-events .event-content .event1 .event-02,
 .section-events .event-content .event2 .event-02 {
-  background: url(../../../assets/img/event-02.jpg) center/cover;
+  background: url(../../assets/img/event-02.jpg) center/cover;
 }
 .section-events .event-content .event1 .event-01,
 .section-events .event-content .event1 .event-02,
 .section-events .event-content .event2 .event-01,
 .section-events .event-content .event2 .event-02 {
   -ms-flex-preferred-size: 40%;
-  flex-basis: 40%;
+      flex-basis: 40%;
   height: 100%;
   position: relative;
 }
@@ -740,8 +708,8 @@ header p {
   width: 80px;
   background-color: rgb(33, 32, 30);
   -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 .section-events .event-content .event1 .event-01 h6,
 .section-events .event-content .event1 .event-02 h6,
@@ -767,23 +735,23 @@ header p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   color: rgb(65, 65, 65);
 }
 .section-events .event-content .event-03 {
-  background: url(../../../assets/img/event-03.jpg) center/cover;
+  background: url(../../assets/img/event-03.jpg) center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-area: ev3;
 }
 .section-events .event-content .event-03 .center {
@@ -795,11 +763,11 @@ header p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 60px;
 }
 .section-events .event-content .event-03 .center .dating {
@@ -811,8 +779,8 @@ header p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgb(238, 238, 238);
 }
 .section-events .event-content .event-03 .center .dating h6 {
@@ -841,7 +809,7 @@ header p {
 }
 .bottom-content::after {
   content: "";
-  background: url(../../../assets/img/gmap.jpg) center/cover;
+  background: url(../../assets/img/gmap.jpg) center/cover;
   height: 400px;
   width: 100%;
   margin: auto;
@@ -863,8 +831,8 @@ header p {
   position: absolute;
   top: -35px;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   border-radius: 100%;
   height: 70px;
 }
@@ -883,4 +851,4 @@ header p {
 .bottom-text span {
   color: rgb(166, 114, 69);
   font-size: 1.2rem;
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
