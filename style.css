@@ -1,69 +1,66 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-  min-height: 100vh;
-  background: rgb(235, 244, 242);
-}
-form {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  padding: 6px 20px;
-  border-radius: 0 0 6px 6px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.054);
+.filter-container {
+  text-align: center;
+  padding-bottom: 20px;
 }
 input {
-  border: 1px solid rgb(235, 244, 242);
-  background: rgb(235, 244, 242);
-  color: #16d9e7;
-  outline: none;
-  border-radius: 5px;
-  height: 30px;
-  margin: 10px 0 5px;
-  width: 270px;
-  font-size: 1.2rem;
+  margin: 20px auto;
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
   transition: 0.2s;
 }
 input:focus {
-  border: 1px solid #16d9e7;
+  border-radius: 30px;
+  background: rgb(238, 238, 238);
 }
-#result {
+.range-container {
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 110px;
+  align-items: center;
+  justify-content: center;
 }
-#result > li {
-  flex: 1 0 25%;
-  min-width: 280px;
-  /* border: 1px solid #16d9e7; */
-  background: white;
-  margin: 10px;
-  border-radius: 5px;
-  padding: 10px 20px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.084);
+input[type="range"] {
+  width: 250px;
+  margin: 0 10px 10px 0;
 }
-h2 {
-  margin: auto;
-  color: #16d9e7;
+.range-container span {
+  font-size: 1.2rem;
+  transform: translateY(-3px);
 }
-p {
-  color: #36ca79;
-}
-img {
+
+.countries-container {
   width: 100%;
-  margin: 10px 0;
-  border-radius: 15px;
-  object-fit: cover;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.304);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
-li > ul > li {
-  text-align: left;
+
+.card {
+  min-height: 300px;
+  flex: 0 1 24%;
+  border-radius: 25px;
+  list-style: none;
+  background: rgb(43, 43, 43);
+  text-align: center;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: 15px auto;
+  width: 180px;
+  height: 120px;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 0.9rem;
 }

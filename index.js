@@ -1,59 +1,104 @@
-// https://www.themealdb.com/api/json/v1/1/search.php?s=chicken
-const result = document.getElementById("result");
-const form = document.querySelector("form");
-const input = document.querySelector("input");
-let meals = [];
+const countriesContainer = document.querySelector(".countries-container");
+const inputSearch = document.getElementById("inputSearch");
+let nameCountry = [];
 
-async function fetchMeals(search) {
-  await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
-    .then((res) => res.json())
-    .then((data) => (meals = data.meals));
+async function fetchPays(btn) {
+  await fetch(`https://restcountries.com/v3.1/all`)
+    .then((response) => response.json())
+    .then((data) => (nameCountry = data));
 
-  console.log(meals);
-}
+  console.log(nameCountry);
 
-function mealsDisplay() {
-  if (meals === null) {
-    result.innerHTML = "<h2>Aucun résultat</h2>";
-  } else {
-    meals.length = 12;
+  countriesContainer.innerHTML = nameCountry
+    .filter((country) =>
+      country.translations.fra.common
+        .toUpperCase()
+        .includes(inputSearch.value.toUpperCase())
+    )
+    .sort((a, b) => {
+      let aCountry = a.translations.fra.common;
+      let bCountry = b.translations.fra.common;
 
-    result.innerHTML = meals
-      .map((meal) => {
-        let ingredients = [];
-
-        for (i = 1; i < 21; i++) {
-          if (meal[`strIngredient${i}`]) {
-            let ingredient = meal[`strIngredient${i}`]; // entre guillemets de la touche 7 pour avoir dans cette exemple un nom de variable dynamique
-            let measure = meal[`strMeasure${i}`];
-
-            ingredients.push(`<li>${ingredient} - ${measure}</li>`);
+      if (btn == "alphabet") {
+        for (i = 0; i < 250; i++) {
+          if (
+            aCountry.localeCompare(bCountry) < bCountry.localeCompare(aCountry)
+          ) {
+            return -1;
           }
+          return 1;
         }
-
-        console.log(ingredients);
-
-        return `
-            <li class="card">
-            <h2>${meal.strMeal}</h2>
-            <p>${meal.strArea}</p>
-            <a href="${meal.strYoutube}">Video</a>
-            <img src="${meal.strMealThumb}" alt="photo ${meal.strMeal}"></img>
-            <ul>Ingrédients : ${ingredients.join("")}</ul>
-            <br>
-            <a href="${meal.strSource}">Source</a>
-            </li>
-            `;
-      })
-      .join("");
-  }
+      } else if (btn === "decroissant") {
+        return b.population - a.population;
+      }
+      return a.population - b.population;
+    })
+    .slice(0, inputRange.value)
+    .map(
+      (country) => `
+      <div class="card">
+      <img src="${country.flags.png}"></img>
+      <h2>${country.translations.fra.common}</h2>
+      <br>
+      <h4>Capital : ${country.capital}</h4>
+      <br>
+      <p>Population : ${country.population.toLocaleString()}</p>
+      </div>
+      `
+    )
+    .join("");
 }
 
-input.addEventListener("input", (e) => {
-  fetchMeals(e.target.value);
+inputSearch.addEventListener("input", (e) => {
+  fetchPays(e.target.value);
 });
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  mealsDisplay();
+inputRange.addEventListener("input", (e) => {
+  rangeValue.textContent = e.target.value;
+  fetchPays(e.target.value);
 });
+
+minToMax.addEventListener("click", () => {
+  fetchPays("croissant");
+});
+
+maxToMin.addEventListener("click", () => {
+  fetchPays("decroissant");
+});
+
+alpha.addEventListener("click", () => {
+  fetchPays("alphabet");
+});
+
+// 1 - Tester le lien de l'API dans le navigateur (https://restcountries.com/v3.1/all)
+
+// 2 - Créer une fonction pour "fetcher" les données, afficher les données dans la console.
+
+// 3 - Passer les données à une variable
+
+// 4 - Créer une fonction d'affichage, et paramétrer l'affichage des cartes de chaque pays grace à la méthode MAP
+
+// 5 - Récupérer ce qui est tapé dans l'input et filtrer (avant le map) les données
+// coutry.name.includes(inputSearch.value);
+
+// 6 - Avec la méthode Slice gérer le nombre de pays affichés (inputRange.value)
+
+// 7 - Gérer les 3 boutons pour trier (méthode sort()) les pays
+
+// ------------------------------------
+// countriesContainer.innerHTML = monTableau
+// .filter((country) => country.nomdupays.includes(inputSearch.value))
+// .sort((a,b) => {
+//     if (...) {
+//         return ...
+//     } else if (..) {
+//         return ..
+//     }
+// })
+// .slice(0, inputValue)
+// .map((country) => `
+// <div class="card">
+// </div>
+// `)
+
+// ----------------------------------------

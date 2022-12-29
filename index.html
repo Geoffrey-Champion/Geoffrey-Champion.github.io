@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal app</title>
-
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <div class="app">
-        <form action="">
-            <label for="search">Entrez le nom d'un aliment (en anglais) </label><br>
-            <input type="text" id="search" placeholder="ex : beef" autocomplete="off">
-        </form>
-
-        <ul id="result"></ul>
+  <div class="filter-container">
+    <input type="text" id="inputSearch" placeholder="Rechercher">
+    <div class="range-container">
+      <input type="range" value="24" max="250" id="inputRange">
+      <span id="rangeValue">24</span>
     </div>
+    <button class="btnSort" id="minToMax">Tri croissant</button>
+    <button class="btnSort" id="maxToMin">Tri décroissant</button>
+    <button class="btnSort" id="alpha">Tri Alphabétique</button>
+  </div>
 
+  <div class="countries-container"></div>
 
-    <script src="./index.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
